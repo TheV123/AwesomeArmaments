@@ -1,25 +1,26 @@
 {
   "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#B#",
+    "CHC",
+    "#B#"
+  ],
   "key": {
     "#": {
-      "item": "minecraft:blaze_powder"
+      "item": "minecraft:redstone_block"
     },
-    "D": {
-      "item": "minecraft:diamond"
+    "B": {
+      "item": "awesomearmaments:blood_diamond"
     },
     "C": {
       "item": "minecraft:crying_obsidian"
     },
-    "R": {
-      "item": "minecraft:redstone_block"
+    "H": {
+      "item": "awesomearmaments:hardened_blood"
     }
   },
-  "pattern": [
-    "#D#",
-    "CRC",
-    "#D#"
-  ],
   "result": {
-    "item": "awesomearmaments:berserk_diamond_upgrade"
+    "item": "awesomearmaments:berserk_diamond_upgrade",
+    "count": 1
   }
 }

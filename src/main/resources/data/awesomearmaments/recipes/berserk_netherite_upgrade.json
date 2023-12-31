@@ -1,31 +1,26 @@
 {
   "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#B#",
+    "NXN",
+    "#B#"
+  ],
   "key": {
     "#": {
       "item": "minecraft:crying_obsidian"
     },
     "B": {
-      "item": "minecraft:blaze_powder"
+      "item": "awesomearmaments:blood_diamond"
     },
     "N": {
       "item": "minecraft:netherite_scrap"
     },
-    "R": {
-      "item": "minecraft:redstone_block"
-    },
-    "W": {
-      "item": "minecraft:wither_skeleton_skull"
-    },
-    "T": {
+    "X": {
       "item": "awesomearmaments:berserk_diamond_upgrade"
     }
   },
-  "pattern": [
-    "#B#",
-    "NTN",
-    "RWR"
-  ],
   "result": {
-    "item": "awesomearmaments:berserk_netherite_upgrade"
+    "item": "awesomearmaments:berserk_netherite_upgrade",
+    "count": 1
   }
 }

@@ -1,31 +1,26 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "/D/",
-    "RTR",
-    "KnK"
+    "#B#",
+    "nVn",
+    "#B#"
   ],
   "key": {
-    "/": {
-      "item": "minecraft:blaze_rod"
-    },
-    "D": {
-      "item": "minecraft:dragon_head"
-    },
-    "R": {
+    "#": {
       "item": "minecraft:dragon_breath"
     },
-    "K": {
-      "item": "minecraft:redstone_block"
+    "B": {
+      "item": "awesomearmaments:blood_diamond"
     },
     "n": {
       "item": "minecraft:netherite_ingot"
     },
-    "T": {
+    "V": {
       "item": "awesomearmaments:berserk_netherite_upgrade"
     }
   },
   "result": {
-    "item": "awesomearmaments:bloodlust_upgrade"
+    "item": "awesomearmaments:bloodlust_upgrade",
+    "count": 1
   }
 }

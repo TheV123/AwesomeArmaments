@@ -13,14 +13,25 @@ import net.thev123.awesomearmaments.item.ModItems;
 public class ModLootTableModifiers {
     public static Identifier ELDER_GUARDIAN = new Identifier("minecraft",
             "entities/elder_guardian");
+    public static Identifier VILLAGER = new Identifier("minecraft",
+            "entities/villager");
     public static void modifyLootTables(){
         LootTableEvents.MODIFY.register(((resourceManager, lootManager, id, tableBuilder, source) -> {
             if(ELDER_GUARDIAN.equals(id)){
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.3f))
+                        .conditionally(RandomChanceLootCondition.builder(0.40f))
                         .with(ItemEntry.builder(ModItems.ELDER_GUARDIAN_SCALE))
-                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1f, 1f)).build());
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+
+                tableBuilder.pool(poolBuilder.build());
+            }
+            if(VILLAGER.equals(id)){
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.50f))
+                        .with(ItemEntry.builder(ModItems.HARDENDED_BLOOD))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(2.0f, 4.0f)).build());
 
                 tableBuilder.pool(poolBuilder.build());
             }
