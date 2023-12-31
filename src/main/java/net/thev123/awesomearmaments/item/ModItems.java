@@ -58,6 +58,10 @@ public class ModItems {
     //other items
     public static final Item ELDER_GUARDIAN_SCALE = registerItem("elder_guardian_scale",
             new Item(new FabricItemSettings()));
+    public static final Item HARDENDED_BLOOD = registerItem("hardened_blood",
+            new Item(new FabricItemSettings()));
+    public static final Item BLOOD_DIAMOND = registerItem("blood_diamond",
+            new Item(new FabricItemSettings()));
 
     //weapons
     public static final Item WINDCALLER_SWORD = registerItem("windcaller_sword",

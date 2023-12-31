@@ -15,6 +15,8 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.awesomearmaments"))
                     .icon(() -> new ItemStack(ModItems.BLOODLUST_HELMET)).entries((displayContext, entries) -> {
                         entries.add(ModItems.ELDER_GUARDIAN_SCALE);
+                        entries.add(ModItems.HARDENDED_BLOOD);
+                        entries.add(ModItems.BLOOD_DIAMOND);
 
                         entries.add(ModItems.WINDCALLER_UPGRADE);
                         entries.add(ModItems.WINDCALLER_SWORD);
